@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:loginSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Log in" Height="350" Width="525" FontSize="20">
     <Grid>
-        
+        <TextBlock x:Name="logInText" HorizontalAlignment="Left" Margin="22,32,0,0" TextWrapping="Wrap" Text="Log In" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="userNameText" HorizontalAlignment="Left" Height="21" Margin="22,109,0,0" TextWrapping="Wrap" Text="User Name: " VerticalAlignment="Top" Width="78" FontSize="14"/>
+        <TextBlock x:Name="passwordText" HorizontalAlignment="Left" Height="21" Margin="22,177,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="78" FontSize="14"/>
+        <TextBox x:Name="userNameLogIn" HorizontalAlignment="Left" Height="21" Margin="105,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="14"/>
+        <TextBox x:Name="passwordLogIn" HorizontalAlignment="Left" Height="21" Margin="105,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="14"/>
+        <Button x:Name="logInButton" Content="Log In" HorizontalAlignment="Left" Height="22" Margin="159,229,0,0" VerticalAlignment="Top" Width="56" FontSize="14"/>
+
     </Grid>
 </Window>
