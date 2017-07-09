@@ -12,7 +12,8 @@
         <TextBlock x:Name="passwordText" HorizontalAlignment="Left" Height="21" Margin="22,177,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="78" FontSize="14"/>
         <TextBox x:Name="userNameLogIn" HorizontalAlignment="Left" Height="21" Margin="105,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="14"/>
         <TextBox x:Name="passwordLogIn" HorizontalAlignment="Left" Height="21" Margin="105,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" FontSize="14"/>
-        <Button x:Name="logInButton" Content="Log In" HorizontalAlignment="Left" Height="22" Margin="159,229,0,0" VerticalAlignment="Top" Width="56" FontSize="14"/>
+        <Button x:Name="logInButton" Content="Log In" HorizontalAlignment="Left" Height="22" Margin="159,229,0,0" VerticalAlignment="Top" Width="56" FontSize="14" Click="logIn_click"/>
+        <TextBlock x:Name="signUpText" HorizontalAlignment="Left" Margin="258,32,0,0" TextWrapping="Wrap" Text="Sign Up" VerticalAlignment="Top" FontSize="36"/>
 
     </Grid>
 </Window>

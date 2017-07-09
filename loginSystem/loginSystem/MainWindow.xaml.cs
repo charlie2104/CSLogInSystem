@@ -24,5 +24,9 @@ namespace loginSystem
         {
             InitializeComponent();
         }
+        private void logIn_click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(userNameLogIn.Text);
+        }
     }
 }
