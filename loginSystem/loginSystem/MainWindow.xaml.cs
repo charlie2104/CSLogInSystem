@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Data;
 
 namespace loginSystem
 {
@@ -26,9 +29,12 @@ namespace loginSystem
         }
         private void logIn_click(object sender, RoutedEventArgs e)
         {
-            if (userNameLogIn.Text != "" && passwordLogIn.Text != "")
+            if (userNameLogIn.Text != "" && passwordLogIn.Password != "")
             {
-                MessageBox.Show(userNameLogIn.Text);
+                string ConnectionString = "Data Source=CHARLIEBISHOP\\SQL2016;Initial Catalog=logInCsTest;Integrated Security=True";
+                SqlConnection connection;
+                connection = new SqlConnection(ConnectionString);
+                connection.Open();
             }
             else
             {
@@ -37,9 +43,9 @@ namespace loginSystem
         }
         private void signUp_click(object sender, RoutedEventArgs e)
         {
-            if (userNameSignUp.Text != "" && passwordSignUp.Text != "" && confirmPasswordSignUp.Text != "")
+            if (userNameSignUp.Text != "" && passwordSignUp.Password != "" && confirmPasswordSignUp.Password != "")
             {
-                if (passwordSignUp.Text == confirmPasswordSignUp.Text)
+                if (passwordSignUp.Password == confirmPasswordSignUp.Password)
                 {
                     MessageBox.Show("Signed Up!");
                 }
